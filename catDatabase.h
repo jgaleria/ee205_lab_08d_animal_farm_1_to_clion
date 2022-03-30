@@ -18,11 +18,12 @@
 #define MAX_NAME (50)
 #define MAX_CATS (1024)
 
-// extern
-extern int numberOfCats;
-
 //typedefs
 typedef float Weight;
+typedef int NumCats;
+
+//extern
+extern NumCats numberOfCats;
 
 // enums Gender, Breed, Color
 enum Gender {UNKNOWN_GENDER, MALE, FEMALE};
