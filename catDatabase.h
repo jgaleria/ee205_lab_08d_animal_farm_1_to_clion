@@ -21,6 +21,9 @@
 // extern
 extern int numberOfCats;
 
+//typedefs
+typedef float Weight;
+
 // enums Gender, Breed, Color
 enum Gender {UNKNOWN_GENDER, MALE, FEMALE};
 enum Breed  {UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
@@ -38,7 +41,7 @@ struct Cat
     //isFixed
     bool         isFixed;
     //Weight
-    float        weight;
+    Weight weight;
     //Color
     enum  Color  collar1;
     enum  Color  collar2;
@@ -54,6 +57,6 @@ extern bool enoughSpace();
 extern bool nameIsEmpty( const char name[] );
 extern bool nameIsOver( const char name[] );
 extern bool isNameUnique( const char name[] );
-extern bool weightValid( const float weight );
+extern bool weightValid( const Weight weight );
 extern bool isValidIndex( const int index );
 
